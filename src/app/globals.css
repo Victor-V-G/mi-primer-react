@@ -13,6 +13,7 @@ body{
     text-align: center;
 }
 
+
 .grid-container{
     display: grid;
     height: 100vh;
