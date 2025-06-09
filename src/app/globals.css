@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: blue;
+}
+
+.main{
+    grid-area: main;
+    background-color: chartreuse;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: aquamarine;
+}
+
+@media (min-width: 100px){
+    .grid-container{
+        grid-template: 
+        "header" 100px
+        "main" auto
+        "footer" 100px;
+    }
+}
