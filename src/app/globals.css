@@ -25,12 +25,12 @@ body{
 
 .header{
     grid-area: header;
-    background-color: blue;
+    background-color: #ded8d7;
 }
 
 .main{
     grid-area: main;
-    background-color: chartreuse;
+    background-color: #ece5e3;
 }
 
 .footer{
@@ -45,4 +45,10 @@ body{
         "main" auto
         "footer" 100px;
     }
+}
+
+.headerbox{
+    display: flex;
+    align-items: baseline;
+    padding: 12px;
 }
